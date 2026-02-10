@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile</title>
+
+  <!-- 검색 노출 줄이기(완전 차단은 아님) -->
+  <meta name="robots" content="noindex,nofollow" />
+
+  <meta name="color-scheme" content="dark light" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="grid"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Go to top">
+      <span class="dot"></span>
+      <span id="brandName">Profile</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#notes">Notes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="chip" id="themeBtn" type="button" aria-label="Toggle theme">
+      <span class="chipIcon">◐</span>
+      <span class="chipText">Theme</span>
+    </button>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="hero card">
+      <div class="heroLeft">
+        <p class="kicker" id="kicker">Hello</p>
+        <h1 class="title" id="headline">닉네임</h1>
+        <p class="subtitle" id="subheadline">한 줄 소개</p>
+
+        <div class="ctaRow" id="ctaRow"></div>
+
+        <div class="metaRow" id="metaRow"></div>
+      </div>
+
+      <div class="heroRight">
+        <div class="portrait" aria-hidden="true">
+          <div class="portraitInner">
+            <div class="mono" id="monoTag">OSINT-safe intro</div>
+            <div class="big" id="bigTag">Portfolio-lite</div>
+            <div class="small" id="smallTag">No over-sharing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="sectionHead">
+        <h2>About</h2>
+        <p id="aboutHint">짧고 안전하게, 지금 하는 것만.</p>
+      </div>
+      <div class="card pad">
+        <p class="para" id="aboutText"></p>
+
+        <div class="pillGrid" id="pillGrid"></div>
+
+        <div class="twoCol">
+          <div class="mini">
+            <h3>Focus</h3>
+            <ul class="list" id="focusList"></ul>
+          </div>
+          <div class="mini">
+            <h3>Skills</h3>
+            <ul class="list" id="skillList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="sectionHead">
+        <h2>Projects</h2>
+        <p>설명은 2줄 이하, 링크는 깔끔하게.</p>
+      </div>
+
+      <div class="gridCards" id="projectGrid"></div>
+    </section>
+
+    <section class="section" id="notes">
+      <div class="sectionHead">
+        <h2>Notes</h2>
+        <p>짧은 메모 / 관심사 / 읽은 것 로그(개인정보 없는 선에서).</p>
+      </div>
+
+      <div class="card pad">
+        <ul class="noteList" id="noteList"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="sectionHead">
+        <h2>Contact</h2>
+        <p>이메일 대신 GitHub로 받는 걸 기본값으로 추천.</p>
+      </div>
+
+      <div class="card pad">
+        <div class="contactRow" id="contactRow"></div>
+        <p class="fine" id="contactFine"></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span id="footerLeft"></span>
+      <span id="footerRight"></span>
+    </footer>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
