@@ -146,7 +146,7 @@ function render(){
 
   safeText(document.getElementById("footerLeft"), PROFILE.footerLeft);
   safeText(document.getElementById("footerRight"), PROFILE.footerRight);
-
+  // CBSH{101_yOu_g0t_FOo1ed}
   // Title
   document.title = `${PROFILE.headline} · Profile`;
 }
